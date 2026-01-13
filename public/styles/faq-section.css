@@ -1,0 +1,105 @@
+/* faq section */
+.faq-section {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.faq-section .faq-content {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.faq-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-left h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.faq-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* FAQ Card */
+.faq-card {
+  background: linear-gradient(135deg, #291c33, #9216eb);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.faq-header i {
+  transition: transform 0.3s ease;
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: #111;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-body p {
+  margin: 15px 0;
+  color: #ccc;
+}
+
+/* Right Side */
+.faq-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faq-right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.faq-right .faq-image img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Active FAQ card */
+.faq-card.active .faq-body {
+  max-height: 200px; /* adjust as needed */
+  padding: 15px 20px;
+}
+
+.faq-card.active .faq-header i {
+  transform: rotate(180deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .faq-section .faq-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .faq-left h1 {
+    font-size: 2.5rem;
+  }
+  .faq-right p {
+    font-size: 1.1rem;
+  }
+}

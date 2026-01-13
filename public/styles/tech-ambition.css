@@ -1,0 +1,226 @@
+
+.tech-ambition {
+  background-color: #111;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.tech-main {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+/* Left Side: Image */
+.tech-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex; 
+}
+
+.tech-image img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 25px;
+  display: block;
+}
+
+
+/* Right Side: Content */
+.tech-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tech-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.tech-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.tech-content .button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tech-content .button-group a {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #9a4dff;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  border: 2px solid #9a4dff;
+  color: #9a4dff;
+  background-color: transparent;
+}
+
+.btn-primary:hover,
+.btn-outline-secondary:hover {
+  opacity: 0.85;
+}
+
+/* Card + Icon Row */
+.card-icon-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Single Card */
+.tech-card {
+  display: flex;
+  background-color: #1a1a1a;
+  border: 1px solid #9a4dff;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 20px;
+  flex: 1 1 150px;
+  align-items: flex-start;
+}
+
+.card-icon {
+  background-color: #9a4dff;
+  border-radius: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Icon Grid */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-item {
+  width: 60px;
+  height: 60px;
+  background-color: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #9a4dff;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-item.empty {
+  background: transparent;
+}
+
+/* Icon hover effect */
+.icon-item:hover {
+  transform: scale(1.1);
+  background-color: #9a4dff;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .tech-main {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tech-image {
+   
+    height: auto;
+  }
+
+  .tech-image img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .card-icon-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(4, 50px);
+  }
+
+  .tech-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .tech-content p {
+    font-size: 1rem;
+  }
+
+  .tech-content .button-group {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .tech-content p {
+    font-size: 0.95rem;
+  }
+
+  .card-icon {
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+
+  .icon-item {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}

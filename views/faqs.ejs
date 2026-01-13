@@ -1,0 +1,177 @@
+<%- include('partials/header.ejs') %>
+<section class="other">
+  <div class="container" data-aos="fade">
+    <div class="other-text">
+      <h1 data-aos="fade-up" data-aos-delay="300">FAQs</h1>
+      <p class="path" data-aos="fade" data-aos-duration="400">
+        <a href="/">Home</a> <i class="fas fa-angle-right"></i> FAQs
+      </p>
+      <p class="desc" data-aos="fade-down" data-aos-duration="500">
+        Have questions about how Velocity works or what we can do for your
+        startup? You're in the right place. Our Frequently Asked Questions
+        section provides detailed
+      </p>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/faq-section.ejs') %>
+
+<section class="faq-section">
+  <div class="container">
+    <div
+      class="faq-head"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      "
+    >
+      <h1 data-aos="fade-up" data-aos-delay="100">General Asked Questions</h1>
+      <p style="width: 75%; margin-bottom: 25px" data-aos="fade-up-left">
+        We started as a small group of innovators with a bold vision: to make
+        technology simple, scalable, and accessible for every business.
+      </p>
+    </div>
+    <div class="faq-content">
+      <!-- Left Side: FAQ -->
+      <div class="faq-left" data-aos="fade-right" data-aos-duration="800">
+        <div class="faq-cards">
+          <!-- Card 1 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-header">
+              <span>What is your platform best suited for?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Our platform is ideal for startups, small businesses, and
+                growing teams that need simple yet scalable project management
+                tools.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-header">
+              <span>Can I scale my plan as my team grows?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Absolutely! You can upgrade or modify your plan anytime to match
+                your team's evolving needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-header">
+              <span>Is my data secure on your platform?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Yes. We use industry-standard encryption and secure cloud
+                storage to ensure your data is safe at all times.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-header">
+              <span>Do you offer customer support?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                We offer 24/7 support through email, chat, and phone for all
+                paid plans.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Right Side -->
+      <div class="faq-right" data-aos="fade-left" data-aos-duration="800">
+        <div class="faq-cards">
+          <!-- Card 1 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-header">
+              <span>How quickly can I get started with your platform?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                You can start using our platform immediately after signing up,
+                no installation or long setup required.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-header">
+              <span>Can multiple team members collaborate simultaneously?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Yes! Our platform is designed for real-time collaboration,
+                allowing multiple team members to work together seamlessly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-header">
+              <span>Do you offer a mobile app?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Absolutely! Our mobile app is available for both iOS and
+                Android, letting you manage tasks on the go.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="faq-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-header">
+              <span>Is there a free trial available?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-body">
+              <p>
+                Yes, we offer a 14-day free trial so you can explore all the
+                features before committing to a plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer.ejs') %>
+<script>
+  var faqCards = document.querySelectorAll(".faq-card");
+
+  faqCards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      // Toggle the 'active' class on the clicked card
+      card.classList.toggle("active");
+    });
+  });
+</script>

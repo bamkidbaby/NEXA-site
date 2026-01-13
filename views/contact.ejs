@@ -1,0 +1,75 @@
+<%- include('partials/header.ejs') %>
+<section class="other">
+  <div class="container" data-aos="fade">
+    <div class="other-text">
+      <h1 data-aos="fade-up" data-aos-delay="300">Contact Us</h1>
+      <p class="path" data-aos="fade" data-aos-duration="400">
+        <a href="/">Home</a> <i class="fas fa-angle-right"></i> Our Services
+      </p>
+      <p class="desc" data-aos="fade-down" data-aos-duration="500">
+        Ready to take your startup to the next level? Let’s connect. Whether
+        you're looking to build your first product, scale your technology, or
+        explore collaboration
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <h2>Technology That Grows With You</h2>
+      <p>
+        From early-stage startups to worldwide enterprises, our flexible pricing
+        evolves with your needs. Begin free, scale effortlessly, and unlock
+        features that accelerate your team's innovation.
+      </p>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <span>hello@yourcompany.com</span>
+        </div>
+
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h4>Phone</h4>
+          <span>+1 (234) 567-8901</span>
+        </div>
+
+        <div class="info-card">
+          <i class="fas fa-flag"></i>
+          <h4>Address</h4>
+          <span>123 Innovation Street, New York, NY</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE (FORM) -->
+    <div class="contact-right">
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+
+        <div class="form-row">
+          <input type="email" placeholder="Email Address" required />
+          <input type="text" placeholder="Subject" required />
+        </div>
+
+        <textarea placeholder="Comments" rows="5"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<%- include('partials/footer.ejs') %>

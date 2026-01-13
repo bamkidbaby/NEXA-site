@@ -1,0 +1,106 @@
+.comingsoon-page {
+  height: 100vh;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(154, 77, 255, 0.5), rgba(26, 0, 52, 0.8)),
+    url('https://templates.enativestudio.com/velocity/wp-content/uploads/sites/39/2025/10/bearded-man-using-computers-and-writing-code-in-ne-2025-03-08-02-30-41-utc_compressed-e1760326619557.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.comingsoon-container h1 {
+  font-size: 5rem;
+  margin-bottom: 40px;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.count-card {
+  background: rgba(26, 0, 52, 0.7);
+  border-radius: 15px;
+  padding: 30px 20px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.count-card:hover {
+  transform: scale(1.05);
+}
+
+.count-card span {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.count-card p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.stay-tuned {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comingsoon-desc {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: #9a4dff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.back-home:hover {
+  background: #b56bff;
+}
+
+@media (max-width: 768px) {
+  .countdown {
+    gap: 10px;
+  }
+
+  .count-card {
+    padding: 20px 15px;
+    min-width: 70px;
+  }
+
+  .comingsoon-container h1 {
+    font-size: 3rem;
+  }
+
+  .stay-tuned {
+    font-size: 1.5rem;
+  }
+}

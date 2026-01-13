@@ -1,0 +1,102 @@
+/* Error 404 Page Styles */
+.error-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  overflow: hidden;
+  background: url('https://templates.enativestudio.com/velocity/wp-content/uploads/sites/39/2025/10/bearded-man-using-computers-and-writing-code-in-ne-2025-03-08-02-30-41-utc_compressed-e1760326619557.jpg') center/cover no-repeat;
+}
+
+/* Purple translucent overlay */
+.error-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 11, 39, 0.445); /* translucent purple */
+  z-index: 1;
+}
+
+/* Container for content */
+.error-container {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Headings */
+.error-container h1 {
+  font-size: 5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.error-container h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Description */
+.error-container p {
+  font-size: 1.1rem;
+  color: #e0d7ff;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+}
+
+/* Back to Home Button */
+.error-container a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #9a4dff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.error-container a:hover {
+  background: #b56bff;
+}
+
+.error-container a i {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .error-container h1 {
+    font-size: 4rem;
+  }
+  .error-container h2 {
+    font-size: 1.7rem;
+  }
+  .error-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container h1 {
+    font-size: 3rem;
+  }
+  .error-container h2 {
+    font-size: 1.5rem;
+  }
+  .error-container p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,106 @@
+/* userlove */
+.user-love-grid {
+  background-color: #111;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.user-love-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-love-grid h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.user-love-head p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 60px;
+  line-height: 1.6;
+  width: 50%;
+}
+
+/* Grid layout */
+.user-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Individual Cards */
+.user-card {
+  background: linear-gradient(145deg, #1c1c1c, #111);
+  border-radius: 20px;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.quote-icon {
+  font-size: 1.6rem;
+  color: #9a4dff;
+}
+
+.user-quote {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .user-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .user-love-grid {
+    padding: 60px 15px;
+  }
+  .user-card {
+    padding: 25px 15px;
+  }
+  .user-love-grid h1 {
+    font-size: 2rem;
+  }
+  .user-love-grid p {
+    font-size: 0.75rem;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}

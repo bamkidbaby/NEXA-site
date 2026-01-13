@@ -1,0 +1,282 @@
+/* trust-section */
+.trust-section {
+  padding: 80px 20px;
+  background: #111;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trusted-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #9ca3af;
+}
+
+/* Desktop layout (flex with gap) */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 70px;
+}
+
+.logo-row img {
+  max-height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.35;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.logo-row img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .logo-row {
+    display: flex;
+    overflow-x: auto;
+    /* horizontal scroll */
+    gap: 20px;
+    padding: 0 20px;
+    scroll-snap-type: x mandatory;
+    /* snap to each logo */
+    -webkit-overflow-scrolling: touch;
+    /* smooth scrolling on iOS */
+    cursor: grab;
+    /* indicate draggable */
+  }
+
+  .logo-row:active {
+    cursor: grabbing;
+  }
+
+  .logo-row img {
+    flex: 0 0 auto;
+    width: 70vw;
+    max-width: 200px;
+    scroll-snap-align: start;
+    object-fit: contain;
+    opacity: 0.35;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .logo-row img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  /* Hide scrollbar */
+  .logo-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo-row {
+    scrollbar-width: none;
+  }
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #9ca3af;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gradient-bg);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.learn-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.226);
+  background: linear-gradient(135deg, #9216eb, #bd7fe9);
+}
+
+.learn-more .thin-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: 400;
+  transition: transform 0.25s ease;
+}
+
+.learn-more:hover .thin-arrow {
+  transform: translateX(4px);
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 100%;
+  height: 50vh;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.info-boxes {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.box {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+
+  h4 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  p {
+    color: #9ca3af;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.box .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+}
+
+.box .right {
+  align-self: flex-end;
+}
+
+.box span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.box .box-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box .icon {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  background: #9a4dff;
+}
+
+.image-box,
+.image-box img {
+  margin: 0;
+  padding: 0;
+  border-radius: 28px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.side-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.side-box .head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .content-row {
+    flex-direction: column;
+  }
+
+  .text-content h2{
+    font-size: 3rem;
+  }
+
+  .box {
+    height: 200px;
+    padding: 12px;
+    gap: 25px;
+
+    .left {
+      width: 60%;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .info-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .image-content {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
