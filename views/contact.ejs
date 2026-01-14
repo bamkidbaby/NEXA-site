@@ -7,7 +7,7 @@
         <a href="/">Home</a> <i class="fas fa-angle-right"></i> Our Services
       </p>
       <p class="desc" data-aos="fade-down" data-aos-duration="500">
-        Ready to take your startup to the next level? Let’s connect. Whether
+        Ready to take your startup to the next level? Let's connect. Whether
         you're looking to build your first product, scale your technology, or
         explore collaboration
       </p>
@@ -20,7 +20,7 @@
   <div class="contact-container">
 
     <!-- LEFT SIDE -->
-    <div class="contact-left">
+    <div class="contact-left" data-aos="fade-up-right" data-aos-delay="300">
       <h2>Technology That Grows With You</h2>
       <p>
         From early-stage startups to worldwide enterprises, our flexible pricing
@@ -50,11 +50,11 @@
     </div>
 
     <!-- RIGHT SIDE (FORM) -->
-    <div class="contact-right">
-      <form class="contact-form">
+    <div class="contact-right" data-aos="fade-up-left" data-aos-delay="500">
+      <form class="contact-form" method="POST" action="/submit">
         <div class="form-row">
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
+          <input type="text" placeholder="First Name" name="fname" required />
+          <input type="text" placeholder="Last Name" name="lname" required />
         </div>
 
         <div class="form-row">
